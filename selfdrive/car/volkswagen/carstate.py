@@ -120,10 +120,6 @@ class CarState(CarStateBase):
     if self.tsk_status == 2:
       # ACC okay and enabled, but not currently engaged
       ret.cruiseState.available = True
-      ret.cruiseState.enabled = False
-    elif self.tsk_status in (3, 4, 5):
-      # ACC okay and enabled, currently regulating speed (3) or driver accel override (4) or overrun coast-down (5)
-      ret.cruiseState.available = True
       ret.cruiseState.enabled = True
     else:
       # ACC okay but disabled (1), or a radar visibility or other fault/disruption (6 or 7)

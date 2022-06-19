@@ -408,18 +408,22 @@ FW_VERSIONS = {
   CAR.TCROSS_MK1: {
     (Ecu.engine, 0x7e0, None): [
       b'\xf1\x8704C906025AK\xf1\x897053',
+      b'\xf1\x8705C906032M \xf1\x891704'
     ],
     (Ecu.transmission, 0x7e1, None): [
       b'\xf1\x870CW300050E \xf1\x891903',
     ],
     (Ecu.srs, 0x715, None): [
       b'\xf1\x872Q0959655AJ\xf1\x890250\xf1\x82\02212130411110411--04041104141311152H14',
+      b'\xf1\x872Q0959655AP\xf1\x890511\xf1\x82\x1315140511110511--1405110519151215391414'
     ],
     (Ecu.eps, 0x712, None): [
       b'\xf1\x872Q1909144M \xf1\x896041',
+      b'\xf1\x872Q1909144S \xf1\x896042'
     ],
     (Ecu.fwdRadar, 0x757, None): [
       b'\xf1\x872Q0907572T \xf1\x890383',
+      b'\xf1\x872Q0907572AA\xf1\x890396'
     ],
   },
   CAR.TIGUAN_MK2: {

@@ -23,7 +23,7 @@ from jsonrpc import JSONRPCResponseManager, dispatcher
 from websocket import (ABNF, WebSocketException, WebSocketTimeoutException,
                        create_connection)
 from common.params import Params
-API_HOST = os.getenv('API_HOST', 'https://api.commadotai.com') if not Params().get_bool("dp_api_custom") else Params().get("dp_api_custom_url", encoding='utf-8')
+API_HOST = os.getenv('API_HOST', 'https://api.retropilot.org') if not Params().get_bool("dp_api_custom") else Params().get("dp_api_custom_url", encoding='utf-8')
 
 import cereal.messaging as messaging
 from cereal import log
